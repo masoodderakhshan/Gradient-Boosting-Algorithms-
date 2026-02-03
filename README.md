@@ -41,11 +41,11 @@ submitted to *Geomechanics and Geoengineering: An International Journal*.
 If you use this repository, please cite the following manuscript:
 
 ```
-@article{Ebrahimi Derakhshan 2025 Subsidence,
+@article{Ebrahimi Derakhshan 2026 Subsidence,
   title={A Comparative Analysis of Gradient Boosting Algorithms for Predicting the Shear Strength of Root-Reinforced Unsaturated Soil},
-  author={Ebrahimi Derakhshan, Masoud and Shahmiri, Amirreza},
+  author={Ebrahimi Derakhshan, Masoud and Shahmiri, Amirreza; Mamaghanian, Jaber and Razeghi,  Hamid Reza},
   journal={Geomechanics and Geoengineering: An International Journal},
-  year={2025},
+  year={2026},
   note={Submitted}
 }
 ```
