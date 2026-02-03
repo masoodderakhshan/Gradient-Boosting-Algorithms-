@@ -28,6 +28,12 @@ submitted to *Geomechanics and Geoengineering: An International Journal*.
 * **Amirreza Shahmiri**
     * *Department of Civil and Architectural Engineering, Sultan Qaboos University, Muscat, Oman*
     * [![ORCID](https://img.shields.io/badge/ORCID-0009--0002--0746--3887-green)](https://orcid.org/0009-0002-0746-3887)
+* **Jaber Mamaghanian**
+    * *School of Civil Engineering, Iran University of Science and Technology (IUST), Tehran, Iran*
+    * [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--1340--2829-green)](https://orcid.org/0009-0009-3453-8304)
+* **Hamid Reza Razeghi**
+    * *School of Civil Engineering, Iran University of Science and Technology (IUST), Tehran, Iran*
+    * [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--7254--2958-green)](https://orcid.org/0009-0009-3453-8304)
 ---
 
 ## 📜 Citation
