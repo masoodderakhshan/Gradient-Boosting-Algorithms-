@@ -1,0 +1,187 @@
+=== Loading input features ===
+   Test  NS  Depth      W  RWD  Density
+0     1  20    2.5  29.30  3.5    1.485
+1     2  20    7.5  34.63  2.5    1.235
+2     3  20   12.5  34.42  2.5    1.310
+3     4  20   17.5  34.99  2.5    1.485
+4     5  20    7.5  38.14  6.0    1.490
+
+=== Loading displacement data ===
+
+=== Reshaping displacement data ===
+   Displacement_Step  Displacement_kPa  Test
+0                0.0               0.0     8
+1                0.5               5.2     8
+2                1.0               6.8     8
+3                1.5               8.0     8
+4                2.0               8.7     8
+   Displacement_Step  Displacement_kPa  Test  NS  Depth      W  RWD  Density
+0                0.0               0.0     8  20    2.5  28.88  3.2    1.515
+1                0.5               5.2     8  20    2.5  28.88  3.2    1.515
+2                1.0               6.8     8  20    2.5  28.88  3.2    1.515
+3                1.5               8.0     8  20    2.5  28.88  3.2    1.515
+4                2.0               8.7     8  20    2.5  28.88  3.2    1.515
+
+=== Checking missing ===
+Displacement_Step    0
+Displacement_kPa     0
+Test                 0
+NS                   0
+Depth                0
+W                    0
+RWD                  0
+Density              0
+dtype: int64
+
+Train: (1519, 5), Validation: (325, 5), Test: (326, 5)
+
+=== Training and evaluating GradientBoostingRegressor ===
+
+=== GradientBoostingRegressor Test Metrics ===
+MAE: 0.8727
+RMSE: 1.2125
+R2: 0.9914
+
+=== GradientBoostingRegressor Cross-validation ===
+Cross-validated R² scores: [0.92105849 0.93249299 0.91436459 0.94033958 0.84482855]
+Mean R²: 0.9106 | Std: 0.0341
+
+=== Training and evaluating XGBoost ===
+
+=== XGBoost Test Metrics ===
+MAE: 0.8929
+RMSE: 1.2638
+R2: 0.9906
+
+=== XGBoost Cross-validation ===
+Cross-validated R² scores: [0.90608833 0.93251525 0.92443834 0.94769613 0.8946519 ]
+Mean R²: 0.9211 | Std: 0.0188
+
+=== Training and evaluating LightGBM ===
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000311 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 111
+[LightGBM] [Info] Number of data points in the train set: 1519, number of used features: 5
+[LightGBM] [Info] Start training from score 23.570178
+
+=== LightGBM Test Metrics ===
+MAE: 0.6157
+RMSE: 0.9045
+R2: 0.9952
+
+=== LightGBM Cross-validation ===
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000067 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 97
+[LightGBM] [Info] Number of data points in the train set: 1736, number of used features: 5
+[LightGBM] [Info] Start training from score 23.478111
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000069 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 100
+[LightGBM] [Info] Number of data points in the train set: 1736, number of used features: 5
+[LightGBM] [Info] Start training from score 23.751498
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000072 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 106
+[LightGBM] [Info] Number of data points in the train set: 1736, number of used features: 5
+[LightGBM] [Info] Start training from score 23.487730
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000067 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 106
+[LightGBM] [Info] Number of data points in the train set: 1736, number of used features: 5
+[LightGBM] [Info] Start training from score 24.610023
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000069 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 100
+[LightGBM] [Info] Number of data points in the train set: 1736, number of used features: 5
+[LightGBM] [Info] Start training from score 22.920795
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+Cross-validated R² scores: [0.92381364 0.94608509 0.9550031  0.91735842 0.76214439]
+Mean R²: 0.9009 | Std: 0.0707
+
+=== Training and evaluating CatBoost ===
+
+=== CatBoost Test Metrics ===
+MAE: 1.1780
+RMSE: 1.6316
+R2: 0.9844
+
+=== CatBoost Cross-validation ===
+Cross-validated R² scores: [0.92324738 0.92814176 0.93624239 0.94611636 0.87901725]
+Mean R²: 0.9226 | Std: 0.0231
+
+=== All Models Comparison (Test Set) ===
+                           Test_MAE  Test_RMSE   Test_R2
+GradientBoostingRegressor  0.872726   1.212519  0.991362
+XGBoost                    0.892920   1.263845  0.990615
+LightGBM                   0.615686   0.904474  0.995193
+CatBoost                   1.178015   1.631574  0.984359
+
+=== Predicting and plotting LightGBM Displacement-Slip curves ===
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+
+Figure saved successfully as 'LightGBM_Displacement_Slip_Curves_500dpi.png' (500 DPI).
