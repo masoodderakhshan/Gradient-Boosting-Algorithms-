@@ -26,9 +26,6 @@ submitted to *Geomechanics and Geoengineering: An International Journal*.
 * **Masoud Ebrahimi Derakhshan**
     * *School of Civil Engineering, Iran University of Science and Technology (IUST), Tehran, Iran*
     * [![ORCID](https://img.shields.io/badge/ORCID-0009--0009--3453--8304-green)](https://orcid.org/0009-0009-3453-8304)
-* **Amirreza Shahmiri**
-    * *Department of Civil and Architectural Engineering, Sultan Qaboos University, Muscat, Oman*
-    * [![ORCID](https://img.shields.io/badge/ORCID-0009--0002--0746--3887-green)](https://orcid.org/0009-0002-0746-3887)
 * **Jaber Mamaghanian**
     * *School of Civil Engineering, Iran University of Science and Technology (IUST), Tehran, Iran*
     * [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--1340--2829-green)](https://orcid.org/0009-0009-3453-8304)
@@ -44,7 +41,7 @@ If you use this repository, please cite the following manuscript:
 ```
 @article{Ebrahimi Derakhshan 2026,
   title={A Comparative Analysis of Gradient Boosting Algorithms for Predicting the Shear Strength of Root-Reinforced Unsaturated Soil},
-  author={Ebrahimi Derakhshan, Masoud and Shahmiri, Amirreza; Mamaghanian, Jaber and Razeghi,  Hamid Reza},
+  author={Ebrahimi Derakhshan, Masoud; Mamaghanian, Jaber and Razeghi,  Hamid Reza},
   journal={Geomechanics and Geoengineering: An International Journal},
   year={2026},
   note={Submitted}
